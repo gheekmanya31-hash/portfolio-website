@@ -1,138 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <title>Manya | Portfolio</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
-<a class="navbar-brand" href="#">Portfolio</a>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Manya</a>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-</ul>
-</div>
-</div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<!-- Home -->
-<section id="home" class="container text-center py-5">
-<img src="https://via.placeholder.com/150" class="rounded-circle mb-3">
+<!-- Home Section -->
+<section id="home" class="home-section">
+    <div class="container">
+        <div class="row align-items-center">
 
-<h1>Hello, I'm Manya</h1>
-<p>IT Student | Java Learner | Web Developer</p>
+            <div class="col-md-7">
+                <h1>Hello, I'm <span>Manya</span></h1>
+                <h3>B.Tech IT Student</h3>
+                <p>Java Learner | Frontend Developer | DSA Enthusiast</p>
 
-<a href="#contact" class="btn btn-primary">Contact Me</a>
+                <a href="#projects" class="btn custom-btn">View My Projects</a>
+            </div>
+
+            <div class="col-md-5 text-center">
+                <img src="profile.jpg" alt="Manya's Profile Photo"
+                     class="profile-img">
+            </div>
+
+        </div>
+    </div>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="container py-5">
-<h2 class="text-center mb-4">My Skills</h2>
-
-<div class="row">
-
-<div class="col-md-3 mb-3">
-<div class="card p-3 text-center">
-<h4>HTML</h4>
-</div>
-</div>
-
-<div class="col-md-3 mb-3">
-<div class="card p-3 text-center">
-<h4>CSS</h4>
-</div>
-</div>
-
-<div class="col-md-3 mb-3">
-<div class="card p-3 text-center">
-<h4>Bootstrap</h4>
-</div>
-</div>
-
-<div class="col-md-3 mb-3">
-<div class="card p-3 text-center">
-<h4>Java</h4>
-</div>
-</div>
-
-</div>
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container text-center">
+        <h2>About Me</h2>
+        <p class="about-text">
+            I am a B.Tech Information Technology student interested in
+            programming, problem-solving and web development.
+            I am continuously learning new technologies and improving
+            my technical skills by working on projects.
+        </p>
+    </div>
 </section>
 
-<!-- Projects -->
-<section id="projects" class="container py-5">
-<h2 class="text-center mb-4">Projects</h2>
+<!-- Skills Section -->
+<section id="skills" class="section skills-section">
+    <div class="container text-center">
+        <h2>My Skills</h2>
 
-<div class="row">
+        <div class="row justify-content-center mt-4">
 
-<div class="col-md-4 mb-3">
-<div class="card">
-<div class="card-body">
-<h5>Portfolio Website</h5>
-<p>Responsive portfolio using HTML, CSS and Bootstrap.</p>
-</div>
-</div>
-</div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-card">HTML</div>
+            </div>
 
-<div class="col-md-4 mb-3">
-<div class="card">
-<div class="card-body">
-<h5>Calculator</h5>
-<p>Simple calculator using HTML and CSS.</p>
-</div>
-</div>
-</div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-card">CSS</div>
+            </div>
 
-<div class="col-md-4 mb-3">
-<div class="card">
-<div class="card-body">
-<h5>Student Management</h5>
-<p>Java mini project for managing student details.</p>
-</div>
-</div>
-</div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-card">Bootstrap</div>
+            </div>
 
-</div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-card">Java</div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="skill-card">DSA</div>
+            </div>
+
+        </div>
+    </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="container py-5">
-<h2 class="text-center mb-4">Contact Me</h2>
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container text-center">
+        <h2>My Projects</h2>
 
-<form>
+        <div class="row justify-content-center mt-4">
 
-<input type="text" class="form-control mb-3" placeholder="Your Name">
+            <div class="col-md-5 mb-4">
+                <div class="project-card">
+                    <h4>Portfolio Website</h4>
+                    <p>
+                        A personal responsive portfolio website
+                        created using HTML, CSS and Bootstrap.
+                    </p>
+                    <a href="https://gheekmanya31-hash.github.io/portfolio-website/"
+                       target="_blank" class="project-link">
+                        View Project
+                    </a>
+                </div>
+            </div>
 
-<input type="email" class="form-control mb-3" placeholder="Your Email">
+            <div class="col-md-5 mb-4">
+                <div class="project-card">
+                    <h4>Random Joke Generator</h4>
+                    <p>
+                        A simple web project that generates random
+                        jokes using JavaScript.
+                    </p>
+                    <!-- Add your Random Joke Generator URL here -->
+                    <a href="YOUR_JOKE_GENERATOR_LINK"
+                       target="_blank" class="project-link">
+                        View Project
+                    </a>
+                </div>
+            </div>
 
-<textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
-
-<button class="btn btn-success">Send</button>
-
-</form>
-
+        </div>
+    </div>
 </section>
 
-<footer class="bg-dark text-white text-center p-3">
-© 2026 My Portfolio
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <p class="text-center">Have a question or want to connect? Send me a message.</p>
+
+        <div class="contact-box">
+
+            <form action="https://formsubmit.co/YOUR_EMAIL"
+                  method="POST">
+
+                <input type="hidden" name="_subject"
+                       value="New Portfolio Contact Message">
+
+                <input type="hidden" name="_template" value="table">
+
+                <input type="text" name="name"
+                       placeholder="Your Name" required>
+
+                <input type="email" name="email"
+                       placeholder="Your Email" required>
+
+                <textarea name="message" rows="5"
+                          placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn custom-btn w-100">
+                    Submit Details
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Manya | All Rights Reserved</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
 
 </body>
 </html>
